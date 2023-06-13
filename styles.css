@@ -1,5 +1,9 @@
 /* need to fix buttons, shrink issue, 
 more layout issues, and font issue */
+* {
+    flex-shrink: 0;
+}
+
 body {
     font-family: Roboto;
     margin: 0;
@@ -37,6 +41,9 @@ a {
     margin: 0;
     display: flex;
 }
+.left-side-content {
+    margin: 0;
+}
 .main-title {
     font-size: 48px;
     font-weight: 800;
@@ -50,15 +57,19 @@ a {
 }
 .sign-up-button {
     color: #f9faf8;
-    padding: 5px 10px;
+    padding: 5px 30px;
+    border-radius: 8px;
+    border: 0px;
+    font-weight: 800;
+    font-size: 17px;
 }
 
 img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 25px;
     border: 5px solid;
-    padding: 20px;
+    padding: 0px;
     border-color: rgb(42, 114, 247)
 }
 
@@ -76,10 +87,12 @@ img {
     font-weight: 800;
     color:#1F2937;
     text-align: center;
+    flex-shrink: 0;
 }
 
 .info-section {
     margin-bottom: 50px;
+    flex-shrink: 0;
     
 }
 .below-info-header {
@@ -108,15 +121,37 @@ img {
 }
 
 .call-to-action {
-    padding: 50px;
+    padding: 50px 150px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.call-to-action-content {
+    margin: 0;
 }
 .bottom-section {
     color: white;
     display: flex;
     justify-content: center;
     margin: 20px;
+    padding: 70px 0px;
 }
 .bottom-signup-button {
-    
+    border-radius: 8px;
+    border: 2px solid;
+    border-color: #f9faf8;
+    color: #f9faf8;
+    font-weight: 800;
+    padding: 0 40px;
+    margin-left: 150px;
+    font-size: 17px;
+    height: 35px;
+    flex-shrink: 0;
+}
 
+.footer {
+    color: #f9faf8;
+    text-align: center;
+    padding: 50px;
 }
