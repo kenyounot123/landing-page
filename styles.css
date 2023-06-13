@@ -1,14 +1,11 @@
-/* need to fix buttons, shrink issue, 
-more layout issues, and font issue */
+
 * {
     flex-shrink: 0;
 }
 
-body {
-    font-family: Roboto;
+body { 
     margin: 0;
-    padding: 0;
-    flex-shrink: 0;
+    padding: 0;  
 }
 
 .top-navbar, .content, .footer {
@@ -19,6 +16,7 @@ body {
 .header {
     font-size: 24px;
     color: #f9faf8;
+    font-weight: 800;
 }
 .top-navbar {
     display: flex;
@@ -28,29 +26,34 @@ body {
 ul {
     list-style-type: none;
     display: flex;
-    gap: 15px;
-    margin: 0;
+    gap: 25px;
+    margin: 0;   
     padding: 10px;
+    flex-shrink: 0;
+
 }
 a {
     text-decoration: none;
     color: #e5e7eb;
 }
 .content {
-    padding: 40px 400px 70px;
+    padding: 70px 400px 70px;
     margin: 0;
     display: flex;
+    justify-content: space-between;
 }
 .left-side-content {
-    margin: 0;
+    width: 400px;
 }
 .main-title {
     font-size: 48px;
     font-weight: 800;
     color: #f9faf8;
+    margin: 0;
 }
 .title-subtext {
     color: #e5e7eb;
+    margin: 0;
 }
 .sign-up-button, .call-to-action, .bottom-signup-button {
     background-color: #3882F6;
@@ -62,6 +65,7 @@ a {
     border: 0px;
     font-weight: 800;
     font-size: 17px;
+    margin-top: 20px;
 }
 
 img {
@@ -78,8 +82,11 @@ img {
     justify-content: center;
     align-items: center;
     border: 2px solid;
-    width: 600px;
+    width: 500px;
+    height: 200px;
+    
     background-color: #e5e7eb;
+    
 }
 
 .info-header {
@@ -87,37 +94,58 @@ img {
     font-weight: 800;
     color:#1F2937;
     text-align: center;
-    flex-shrink: 0;
+    
 }
 
 .info-section {
     margin-bottom: 50px;
-    flex-shrink: 0;
+    
     
 }
 .below-info-header {
     display: flex;
     justify-content: center;
+    gap: 20px;
     
 }
 .info-pic {
     width: 200px;
     height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    width: 200px;
+    height: 200px;
+    text-align: center;
 }
 
 .quote-section {
     background-color: #e5e7eb;
-    padding: 50px 500px;
+    padding: 100px 500px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .quote {
     font-size: 36px;
     font-style: italic;
     font-weight: 300;
-    color:#1F2937
+    color:#1F2937;
+    margin-bottom: 0;
+    width: 800px;
+    
+
 }
 .quote-credit {
     font-weight: 800;
+    width: 800px;
+    text-align: end;
+    font-size: 25px;
+    
 }
 
 .call-to-action {
@@ -145,6 +173,7 @@ img {
     font-weight: 800;
     padding: 0 40px;
     margin-left: 150px;
+    margin-top: 10px;
     font-size: 17px;
     height: 35px;
     flex-shrink: 0;
