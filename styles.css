@@ -1,3 +1,5 @@
+/* weird margins and paddings for some containers
+fix issue with how some elements move around when using inspect element or minimizing the page */
 
 * {
     flex-shrink: 0;
